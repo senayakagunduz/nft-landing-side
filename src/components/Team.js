@@ -1,77 +1,31 @@
 import React from 'react'
-import goldenWings from "./images/nft-golden-wings.png"
+import {team} from "./data/data"
+import "./css/style.css"
+
 
 const Team = () => {
-  return (
-<div className="container mt-4 offset-2" style={{height:"900px",width:"1000px"}}>
-{/* d-flex justify-content-center align-items-center align-content-center */}
-    <div className='row w-100 d-flex justify-content-center flex-wrap'>
-        <div className=' col-md-3 mb-4'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-4'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-4'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-4'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-    </div>
-    <div className='row w-100 d-flex justify-content-center flex-wrap'>
-        <div className=' col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-    </div>
-    <div className='row w-100 d-flex justify-content-center flex-wrap'>
-        <div className=' col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-        <div className='col-md-3 mb-3'>
-            <div className=" card" style={{width: "14rem"}}>
-                <img src={goldenWings} className="card-img-top" alt="goldenWings"/>
-            </div>
-        </div> 
-    </div>
-    
+return (
+<div className="container" id="team">
+    {
+        team.map((item)=>{
+            const {id, img} = item;
+            return (
+                <div className="responsive" key={id}>
+                    <div className="gallery" >
+                        <img src={img} alt="galery" className='team-item' style={{width:"600",height:"400"}} />
+                        <div className="desc">Add a description of the image here</div>
+                    </div> 
+                </div>
+            )
+        })
+    }
+
+<div className="clearfix"></div>
+
+<div style={{padding:"3rem"}}>
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
 </div>
   )
 }

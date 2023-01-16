@@ -3,7 +3,11 @@
    width: 90%;
    height:90%;
    box-sizing: border-box;
-   margin-top: 3rem;  
+   margin-top: 3rem;
+   border-radius: 1rem;  
+}
+.card-body{
+    border-color:1px solid  black;
 }
 .home-left-side{
     height:100%;
@@ -11,27 +15,105 @@
 .home-text{
     text-align: center;
 }
-/* .carousel-inner > .carousel-item> img {
-width:640px;
-height: 360px;
-} */
-/* .w-100 {
-    width: 100% !important;
-  }*/
-/* .carousel{
-    width: 90%;
-    height:90%;
-    box-sizing: border-box;
-    margin-top: 3rem;  
+.btn-mint{
+width:150px;
+border-color: aliceblue;
+border-radius: 10px;
+}
+/*****Team*****/
+.gallery {
+    border: 5px solid #ccc;
+    border-radius: 15px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
-  .carousel-inner{
-   border: 1px;
-  }  */
-/* .carausel-item img{
-  object-fit: cover;
-  object-position: center;
-  height:50vh;
-  overflow: hidden;
-} */
+  
+  .gallery:hover {
+    border: 5px solid black;
+  }
+  
+  .gallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /**Unicorns**/
+   .collection-card img{
+    border-radius: 20px;
+   }
+   .collection-card:hover{
+    transform:translateY();
+    opacity:1;
+   }
+  /**Roadmap**/
+.roadmap-container{
+    background: #0a1225;
+    padding:20px;
+    border-radius: 10px;
+}
+.single__roadmap{
+position:relative;
+padding:10px 30px;
+z-index:79;
+}
+.single__roadmap::before{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: #7865ff;
+    color:#7865ff;
+    z-index:80;
+}
+.roadmap__icon{
+    position: absolute;
+    top:7px;
+    left: -10px;
+    color:#7865ff;
+    font-size: 1.2rem;
+    z-index:80;
+}
+.single__roadmap h5{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color:#fff;
+}
+.single__roadmap p{
+    font-size: .9rem ;
+    margin-bottom: 15px;
+    color:#fff;
+}
 
+
+
+  
 

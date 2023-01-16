@@ -1,15 +1,17 @@
-import Collection from "./components/Collection";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Roadmap from "./components/Roadmap";
 import Team from "./components/Team"
+import Unicorns from "./components/Unicorns";
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Home/>
-      <Collection/>
       <Team/>
+      <Unicorns/>
+      <Roadmap/>
     </div>
   );
 }
