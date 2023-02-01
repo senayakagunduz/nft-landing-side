@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Roadmap from "./components/Roadmap";
@@ -12,6 +13,7 @@ function App() {
       <Team/>
       <Unicorns/>
       <Roadmap/>
+      <Footer/>
     </div>
   );
 }

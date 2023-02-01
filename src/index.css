@@ -7,11 +7,9 @@
     box-sizing: border-box;
   }
   body{
-    /* background: #0E1B31; */
-    /* background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
-    background-color: rgb(35,41,179);
-    background-image: linear-gradient(0deg, rgba(35,41,179,1) 2%, rgba(84,43,222,1) 36%, rgba(180, 104, 251, 0.617) 64%, rgba(157, 88, 221, 0.443) 91%);
+    /* background:linear-gradient(to left bottom, #e44b90,#151e74,#d45c92) ; */
+    /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background-image: url("./components/images/bright-g851ce0ea8_1920.jpg");
   }
   html{
     scroll-behavior: smooth;
@@ -48,4 +46,46 @@
   }
   section,footer{
     padding: 60px 0px;
+  }
+  .home-header{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 2px rgba(0,0,0,.3);
+  }
+  .btn-home{
+    font-size: 18px;
+    font-weight: 700;
+    cursor:pointer;
+    background-color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.6);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px;
+    width:150px;
+    color:rgb(1, 88, 88);
+  }
+  .btn:hover{
+    background-color: rgba(255,255,255,.7);
+    box-shadow: 0 4px 4px;
+    transition: all 300ms ease;
+  }
+  .home-image{
+    /* box-shadow:0 4px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  @media only screen and (max-width: 400px) {
+    .home-header{
+      margin-top: 3rem;
+    }
+    .collection-img{
+      margin: .5rem;
+     }
+  }
+  @media only screen and (max-width: 767px) {
+    .home-header{
+      margin-top: 3rem;
+    }
+    .collection-img{
+     margin: 1rem;
+    }
   }

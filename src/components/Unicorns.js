@@ -1,6 +1,6 @@
 import React from 'react'
 import {collection} from "./data/data"
-import "./css/style.css"
+import "./css/style.css";
 
 const Unicorns = () => {
   return (
@@ -13,12 +13,12 @@ const Unicorns = () => {
             </div>
             {
               collection.map((item)=>{
-                const {id,img,desc}=item;
+                const {id,img}=item;
                 return (
                   <div className="col-lg-4 col-md-6 col-sm-6" key={id}>
                     <div className="collection-card">
-                      <div className="collection-img">
-                        <img src={img} className="w-100" alt=""/>
+                      <div className="collection-img brighten">
+                        <img src={img} className="w-100 collection" alt=""/>
                       </div>
                     </div>
                   </div>
