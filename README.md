@@ -1,5 +1,7 @@
 ## https://senay-akagndz-nft-landing-page.netlify.app
 
+![nft png](https://user-images.githubusercontent.com/69090467/219531369-7fd59832-45b5-4ac3-836a-03fb480942fa.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
